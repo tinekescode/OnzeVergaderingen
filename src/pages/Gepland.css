@@ -1,0 +1,176 @@
+.no-dots {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 120px;
+}
+
+.tab.active {
+  background: #282c34;
+  color: white;
+}
+
+.attendees {
+  text-align: center;
+  padding: 10px;
+}
+
+.attendees ul li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.new-meeting-form {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin: 10px auto;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 66%;
+}
+
+.new-meeting-form input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.new-meeting-form div {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.new-meeting-form button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #282c34;
+  color: white;
+  font-size: 0.9em;
+}
+
+.new-meeting-form button:last-child {
+  background: #e0e0e0;
+  color: #282c34;
+}
+
+.meetings-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.meetings-header h2 {
+  margin: 0;
+}
+
+.meetings-header button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #282c34;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meetings-header button:hover {
+  background: #373d48;
+}
+
+.meetings-header button::before {
+  content: "+";
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.add-attendee-button {
+  margin: 10px 0;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #282c34;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-attendee-button:hover {
+  background: #373d48;
+}
+
+.attendee-selector {
+  margin: 16px 0;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.attendee-selector ul li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.attendee-selector label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.attendee-selector input[type="checkbox"] {
+  margin: 0;
+}
+
+.delete-button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  background: #ff4444;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.delete-button:hover {
+  background: #cc0000;
+}
+
+.no-dots li input[type="text"] {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
